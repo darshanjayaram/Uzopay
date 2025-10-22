@@ -2,13 +2,14 @@ import React, { useEffect, useMemo, useState } from "react";
 import SectionTitle from "./SectionTitle";
 import "../Css/Expertise.css";
 import shield from "../assets/Shield.png"; 
+import expertise1 from "../assets/expertise-1.png"
 
 export default function Expertise() {
     const cards = [
         {
             title: "UPI Autopay",
             body: "Automate your payments with UPI Autopay, ensuring timely transactions without manual effort.",
-            image: "/assets/expertise-1.png",
+            image: expertise1,
         },
         {
             title: "API Banking",
