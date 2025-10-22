@@ -52,7 +52,7 @@ npm run dev
 ```
 The project will start on 👉 [http://localhost:5173](http://localhost:5173)
 
-###5️⃣ Build for Production
+### 5️⃣ Build for Production
 ```bash
 npm run build
 ```
