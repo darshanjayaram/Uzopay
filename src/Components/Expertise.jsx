@@ -3,6 +3,9 @@ import SectionTitle from "./SectionTitle";
 import "../Css/Expertise.css";
 import shield from "../assets/Shield.png"; 
 import expertise1 from "../assets/expertise-1.png"
+import expertise2 from "../assets/expertise-2.png"
+import expertise3 from "../assets/expertise-3.png"
+import expertise4 from "../assets/expertise-3.png"
 
 export default function Expertise() {
     const cards = [
@@ -14,37 +17,37 @@ export default function Expertise() {
         {
             title: "API Banking",
             body: "Integrate financial services seamlessly into your applications with our robust API banking solutions.",
-            image: "/src/assets/expertise-2.png",
+            image: expertise2,
         },
         {
             title: "Payouts",
             body: "Deliver payouts swiftly and securely, ensuring timely disbursement to employees, partners, or clients.",
-            image: "/src/assets/expertise-3.png",
+            image: expertise3,
         },
         {
             title: "Bulk Payments",
             body: "Process multiple payments at once, saving time and reducing errors with bulk payment options.",
-            image: "/src/assets/expertise-4.png",
+            image: expertise4,
         },
         {
             title: "Bulk Payments",
             body: "Process multiple payments at once, saving time and reducing errors with bulk payment options.",
-            image: "/src/assets/expertise-4.png",
+            image: expertise4,
         },
         {
             title: "Payouts",
             body: "Deliver payouts swiftly and securely, ensuring timely disbursement to employees, partners, or clients.",
-            image: "/src/assets/expertise-3.png",
+            image: expertise3,
         },
         {
             title: "API Banking",
             body: "Integrate financial services seamlessly into your applications with our robust API banking solutions.",
-            image: "/src/assets/expertise-2.png",
+            image: expertise2,
         },
         {
             title: "Bulk Payments",
             body: "Process multiple payments at once, saving time and reducing errors with bulk payment options.",
-            image: "/src/assets/expertise-4.png",
+            image: expertise1,
         },
     ];
 
