@@ -8,7 +8,7 @@ export default function Expertise() {
         {
             title: "UPI Autopay",
             body: "Automate your payments with UPI Autopay, ensuring timely transactions without manual effort.",
-            image: "/src/assets/expertise-1.png",
+            image: "/assets/expertise-1.png",
         },
         {
             title: "API Banking",
