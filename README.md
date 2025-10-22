@@ -38,20 +38,6 @@ It showcases a responsive and modern payment gateway interface built with **Reac
 ```bash
 git clone https://github.com/darshanjayaram/Uzopay.git
 ```
-
-### # 🌐 UzOPay — React + Vite Implementation
-
-This project is a **frontend implementation** for **UzOPay**, designed based on provided Figma specifications.  
-It showcases a responsive and modern payment gateway interface built with **React (Vite)**, **Bootstrap**, and **GSAP animations**.
-
----
-
-## 🛠️ Setup & Run Instructions
-
-### 1️⃣ Clone the Repository
-```bash
-git clone https://github.com/darshanjayaram/Uzopay.git
-```
 ### 2️⃣ Navigate into the Project Folder
 ```bash
 cd Uzopay
