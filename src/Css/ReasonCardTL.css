@@ -1,0 +1,96 @@
+/* === Card Container === */
+.reason-card-tl {
+  position: relative;
+  border-radius: 20px;
+  padding: 14px;
+  background: radial-gradient(
+      100% 150% at 50% 0%,
+      rgba(80, 80, 140, 0.25) 0%,
+      rgba(25, 25, 50, 0.85) 100%
+    ),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0));
+  box-shadow:
+    0px 25px 40px rgba(0, 0, 0, 0.35),
+    inset 0px 1px 1px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  overflow: hidden;
+  min-height: 360px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reason-card-tl:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0px 30px 50px rgba(0, 0, 0, 0.45),
+    0px 0px 30px rgba(128, 99, 255, 0.15);
+}
+
+/* === Video/Image Area === */
+.reason-card-video {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.reason-card-img {
+  width: 100%;
+  border-radius: 12px;
+  background: #1a1a25;
+  filter: drop-shadow(0 6px 20px rgba(0, 0, 0, 0.3));
+}
+
+/* === Content === */
+.reason-card-content {
+  display: block;
+}
+
+/* Title */
+.reason-card-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0;
+  text-align: left;
+
+  /* Gradient text per Figma */
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Soft glow from Figma shadow */
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+
+  margin-bottom: 8px;
+}
+
+.reason-card-title .muted-text {
+  opacity: 0.6;
+}
+
+/* Body */
+.reason-card-body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+}
+
+/* Button */
+.reason-card-btn {
+  margin-top: 16px;
+}
+
+@media (max-width: 992px) {
+  .reason-card-tl {
+    min-height: auto;
+    padding: 20px;
+  }
+}

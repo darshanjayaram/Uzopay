@@ -1,0 +1,58 @@
+.btn-gradient {
+  color: #ffffff !important;
+  box-shadow: inset -4px -1px 25px #6562fb, inset 4px 2px 25px #2737cfa3;
+  border: 0;
+  transition: transform 0.16s ease-in-out;
+}
+
+.btn-gradient:active,
+.btn-gradient:focus {
+  transform: translateY(1px);
+  outline: none;
+  box-shadow: 0 6px 18px rgba(79, 70, 229, 0.12);
+}
+
+.btn-gradient-square {
+  color: #ffffff !important;
+  box-shadow: inset -4px -1px 25px #6562fb, inset 4px 2px 25px #2737cfa3;
+  border: 0;
+  transition: transform 0.16s ease-in-out;
+  border-radius: 10px;
+}
+
+.btn-gradient-square:active,
+.btn-gradient-square:focus {
+  transform: translateY(1px);
+  outline: none;
+  box-shadow: 0 6px 18px rgba(79, 70, 229, 0.12);
+}
+
+.btn-outline-custom {
+  background: transparent;
+  border: 1px solid rgba(59, 55, 80, 0.9);
+  color: rgba(229, 231, 235, 1) !important; 
+  transition: background-color 0.12s ease, color 0.12s ease, transform 0.12s ease;
+}
+
+.btn-outline-custom:hover {
+  background: rgba(255,255,255,0.03);
+  transform: translateY(-1px);
+}
+
+.btn-outline-square{
+  background: transparent;
+  border: 1px solid rgba(59, 55, 80, 0.9);
+  color: rgba(229, 231, 235, 1) !important; 
+  transition: background-color 0.12s ease, color 0.12s ease, transform 0.12s ease;
+  border-radius: 10px;
+}
+
+.btn-outline-square:hover {
+  background: rgba(255,255,255,0.03);
+  transform: translateY(-1px);
+}
+
+.btn {
+  font-size: 0.875rem; 
+  font-weight: 500;
+}

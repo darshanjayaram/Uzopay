@@ -1,0 +1,189 @@
+/* Frame1.css - companion styles for Bootstrap version */
+
+.frame1-section {
+  background: transparent;
+  color: #ffffff;
+  padding-top: 5rem;   /* roughly py-20 */
+  padding-bottom: 5rem;
+}
+
+/* Decorative glows */
+.glow-left {
+  left: 0;
+  top: 2.5rem; /* top-10 equivalent */
+  width: 420px;
+  height: 420px;
+  transform: translateX(-50%); /* -translate-x-1/2 */
+  border-radius: 50%;
+  background: radial-gradient(circle at 100% 0%, rgba(43,22,80,0.4), transparent 60%);
+  filter: blur(60px);
+  z-index: 0;
+}
+
+.glow-right {
+  right: 0;
+  top: 1.5rem; /* top-6 */
+  width: 560px;
+  height: 460px;
+  transform: translateX(25%); /* translate-x-1/4 */
+  border-radius: 50%;
+  background: radial-gradient(circle at 0% 0%, rgba(44,4,74,0.4), transparent 60%);
+  filter: blur(80px);
+  z-index: 0;
+}
+
+/* Left content max width */
+.max-w-605 {
+ position: relative;
+}
+
+.bg-blur-img {
+    position: absolute;
+    object-fit: cover;
+    width: 90%;
+    left: 35px;
+    top: -180px;
+    pointer-events: none;
+    z-index: 0;
+    filter: blur(2px) saturate(110%);
+    transform: translateZ(0);
+}
+
+.max-w-605 > *:not(.bg-blur-img) {
+  position: relative;
+  z-index: 2;
+}
+
+/* responsive adjustments: scale/reposition blur on smaller screens */
+@media (max-width: 992px) {
+  .bg-blur-img {
+    width: 260px;
+    height: 260px;
+    left: 70px;
+    top: -8px;
+    opacity: 0.9;
+  }
+}
+
+/* Growth image next to badge */
+.growth-img {
+  position: absolute;
+    bottom: 2px;
+    left: 154px;
+    object-fit: contain;
+}
+
+/* Heading sizes — responsive */
+/* Frame1 heading styling based on Figma specs */
+.frame1-heading {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;        /* Medium */
+  font-size: 40px;         /* Figma size */
+  line-height: 100%;       /* 1:1 ratio = 40px line height */
+  letter-spacing: 0;       /* no spacing */
+  color: #ffffff;          /* white */
+  max-width: 352px;        /* Figma width */
+  margin-top: 10px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+  .frame1-heading {
+    font-size: 30px;
+    line-height: 110%;
+    max-width: 100%;
+  }
+}
+
+/* Description paragraph */
+/* Frame1 paragraph text (Figma spec) */
+.frame1-desc {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;           /* Regular */
+  font-size: 16.17px;         /* exact from Figma */
+  line-height: 100%;          /* 1:1 = no extra spacing */
+  letter-spacing: 0;          /* none */
+  color: #ffffff;             /* white */
+  max-width: 604px;           /* width per design */
+  margin-top: 8px;
+  margin-bottom: 0;
+  opacity: 0.9;               /* optional for softer white look */
+}
+
+@media (max-width: 768px) {
+  .frame1-desc {
+    font-size: 15px;
+    line-height: 120%;
+    max-width: 100%;
+  }
+}
+
+/* Right side card */
+.frame-card {
+  width: 563px;
+  height: 324px;
+  border-radius: 24px;
+  border: 1px solid #222222;
+  background: transparent;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+
+/* Frame image placed absolutely inside card */
+.frame-image {
+  top: 24px;
+  left: 24px;
+  object-fit: cover;
+  opacity: 0.9;
+}
+
+.frame-bg-blure{
+  top: 24px;
+  left: 24px;
+  object-fit: cover;
+  opacity: 0.9;
+}
+
+.frame-overlay {
+  inset: 0;
+  border-radius: 24px;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 3;
+}
+
+@media (max-width: 992px) {
+  .frame-card {
+    width: 100%;
+    max-width: 450px;
+    height: 272px;
+  }
+.frame1-badge{
+  justify-content: center;
+}
+  .frame-image {
+    position: relative;
+    left: auto;
+    width: 100%;
+    height: auto;
+    opacity: 0.95;
+  }
+  .max-w-605{
+    text-align: center;
+  }
+
+  .glow-left, .glow-right {
+    display: none; 
+  }
+
+  .frame1-section { padding-top: 3rem; padding-bottom: 3rem; }
+}
+
+
+@media (max-width: 576px) {
+  .frame-card {
+    width: 100%;
+    max-width: 260px;
+    height: 168px;
+  }
+}

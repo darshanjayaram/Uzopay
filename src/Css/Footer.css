@@ -1,0 +1,177 @@
+/* Footer base styles (Bootstrap layout used for structure) */
+
+.site-footer {
+  background: linear-gradient(180deg, rgba(1,2,3,1) 0%, rgba(5,6,8,1) 100%);
+  color: #cfd2d6;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  border-top: 1px solid rgba(255,255,255,0.02);
+  padding-top: 96px;
+  padding-bottom: 96px;
+  transition: padding 0.3s ease; /* smooth resize */
+}
+
+/* Brand */
+.footer-brand .brand-text {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.125rem; /* ~18px */
+  letter-spacing: 0.02em;
+}
+
+/* Description paragraph - UPDATED to Figma spec */
+.footer-desc {
+  /* Figma spec */
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;       /* 14px per spec */
+  line-height: 20px;     /* 20px per spec */
+  color: rgba(180, 180, 180, 1); /* exact color from spec */
+
+  max-width: 420px; /* keep previous constraint; adjust if you want wider */
+  margin-bottom: 0.5rem;
+  /* vertical alignment middle handled by grid / layout */
+}
+
+/* Social icons (simple placeholders) */
+.footer-socials .social-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.04);
+  color: #fff;
+  text-decoration: none;
+  transition: transform .12s ease, background .12s ease;
+}
+.footer-socials .social-btn:hover {
+  transform: translateY(-3px);
+  background: rgba(68,199,252,0.06);
+}
+.social-placeholder {
+  font-size: 12px;
+  opacity: 0.95;
+}
+
+/* Column container to keep items stacked and prevent overflow layout issues */
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  min-height: 1px; /* ensure column participates normally */
+}
+
+/* Column headings */
+.footer-col-title {
+  color: #e6e8ea;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  font-size: 14px;
+}
+
+/* Links */
+.footer-links {
+  margin: 0;
+  padding: 0;
+  /* keep the list compact and avoid large gaps */
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-links li {
+  line-height: 1.4;
+}
+
+.footer-links a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  display: inline-block;
+  transition: color .12s ease;
+  font-weight: 400;
+  font-size: 13px;
+}
+.footer-links a:hover {
+  color: #44c7fc; /* accent hover */
+}
+
+/* two-column list using CSS multi-column */
+.footer-links.two-col {
+  column-count: 2;        /* number of columns */
+  column-gap: 28px;      /* gap between columns */
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+  column-break-inside: avoid;
+}
+
+/* ensure list items don't break inside a column visually */
+.footer-links.two-col li {
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+}
+.footer-links-split {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  width: 100%;
+}
+
+/* make sure each UL stacks on mobile */
+@media (max-width: 767.98px) {
+  .footer-links-split {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+/* make each list take equal space */
+.footer-links-split .footer-links {
+  flex: 1 1 0;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+/* links look consistent */
+.footer-links-split .footer-links a {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 24px;
+  transition: color 0.2s ease;
+}
+.footer-links-split .footer-links a:hover {
+  color: #44c7fc;
+}
+/* Responsive tweaks */
+@media (max-width: 991px) {
+  .footer-desc { max-width: 100%; }
+  .footer-brand { margin-bottom: 8px; }
+  .footer-socials { margin-top: 10px; }
+  .site-footer {
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+}
+
+/* smaller screens: center columns stack nicely */
+@media (max-width: 767px) {
+  .footer-links { gap: 6px; align-items: center;}
+  .footer-col-title { margin-bottom: 0.5rem; }
+  .footer-links-split {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer-links-split .footer-links {
+    width: 100%;
+    align-items: center;
+  }
+  .footer-col {
+    align-items: center;
+}
+}

@@ -1,0 +1,220 @@
+.payments-section { color: #fff; font-family: "Inter", sans-serif; }
+
+.payments-card {
+  margin-top: 24px;
+  padding: 22px;
+  border-radius: 18px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1px solid rgba(255,255,255,0.03);
+  box-shadow: 0 30px 60px rgba(2,2,6,0.6);
+  backdrop-filter: blur(12px);
+}
+.payments-tabs .nav-link {
+  background: rgba(255,255,255,0.02);
+  color: rgba(255,255,255,0.85);
+  border-radius: 12px;
+  padding: 3px 18px;
+  margin-right: 8px;
+  border: 1px solid rgba(255,255,255,0.02);
+}
+
+.payments-tabs .nav-link .tab-icon {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  object-fit: contain;
+  vertical-align: middle;
+  opacity: 0.9;
+}
+
+.payments-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;         
+  font-size: 22.2px;        
+  line-height: 32px;
+  letter-spacing: 0;
+  color: #ffffff;           
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  text-align: left;
+}
+.payments-desc {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0;
+  color: rgba(180, 180, 180, 1);
+  display: flex;
+  align-items: center;
+  text-align: left;
+  max-width: 554px; 
+  margin-bottom: 20px;
+}
+
+.feature-item .feature-icon {
+  width: 32px;
+  height: 32px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background: rgba(255,255,255,0.03);
+  border-radius: 8px;
+  color: rgba(255,255,255,0.9);
+  font-size: 16px;
+}
+.feature-text { color: rgba(255,255,255,0.85); font-size: 15px; }
+
+.payments-visual { max-width: 560px; min-height: 260px; padding: 8px; }
+.payments-image { max-width: 100%; height: auto; object-fit: contain; filter: drop-shadow(0 20px 40px rgba(0,0,0,0.6)); }
+
+@media (max-width: 991px) {
+  .payments-title { font-size: 24px; }
+  .payments-visual { margin-top: 18px; }
+}
+
+@media (max-width: 576px) {
+  .payments-tabs {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .payments-tabs .nav-link { white-space: nowrap; }
+}
+
+.payments-tabs-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.payments-tabs {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.03); 
+  border: 1px solid rgba(63, 152, 167, 0.36); 
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25); 
+  padding: 4px;
+  margin: 0 auto;
+  position: relative;
+  backdrop-filter: blur(12px); 
+}
+
+.payments-tabs .nav-item {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.payments-tabs .nav-link:not(.active):hover {
+  background: rgba(255,255,255,0.02);
+}
+
+.payments-tabs .nav-link.active {
+  background: linear-gradient(90deg, rgba(79, 70, 229, 0.25), rgba(96, 165, 250, 0.18));
+  border: 1px solid rgba(79, 70, 229, 0.2);
+  color: #ffffff;
+  box-shadow:
+    0 8px 22px rgba(79, 70, 229, 0.12),
+    inset 0 2px 10px rgba(255, 255, 255, 0.1);
+}
+
+.payments-tabs .tab-icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+.payments-tabs .nav-link.active .tab-label {
+  color: #ffffff;
+}
+
+.payments-tabs .tab-icon img,
+.payments-tabs .tab-icon svg {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
+  filter: drop-shadow(0 1px 3px rgba(0,0,0,0.4));
+}
+
+.payments-tabs .tab-label {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;        
+  font-size: 25px;         
+  line-height: 40px;       
+  letter-spacing: 0px;
+  color: rgba(255, 255, 255, 1); 
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.payments-tabs .nav-link:hover .tab-icon {
+  opacity: 1;
+}
+
+.payments-tabs .nav-link .tab-label {
+  vertical-align: middle;
+  letter-spacing: 0;
+  color: #ffffff;
+}
+
+.payments-tabs .nav-link:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+@media (max-width: 991px) {
+  .payments-tabs .tab-label {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .payments-tabs .nav-link {
+    width: auto;
+    font-size: 20px;
+    height: 44px;
+  }
+}
+
+@media (max-width: 992px) {
+  .payments-title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .payments-desc {
+    font-size: 13px;
+    line-height: 18px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .payments-tabs .tab-label {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .payments-tabs .nav-link {
+    font-size: 16px;
+    height: 40px;
+    padding: 6px 14px;
+  }
+  .payments-tabs {
+    gap: 8px;
+    overflow-x: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .payments-title {
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .payments-desc {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}

@@ -1,0 +1,19 @@
+.badge-custom {
+  max-width: 182px;
+  height: 39px;
+  border-radius: 100px;
+  padding: 10px 15px;
+  background: linear-gradient(#010B14, #010B14) padding-box,
+              linear-gradient(90deg, #101010 0%, #1E7699 100%) border-box;
+  border: 1px solid transparent;
+  overflow: hidden;
+}
+
+.badge-custom span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1;
+  font-size: 0.875rem; 
+  color: #e5e7eb; 
+}

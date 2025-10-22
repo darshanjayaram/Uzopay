@@ -1,0 +1,80 @@
+/* Copyright container */
+.copyright-section {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 20px 0;
+  background: #000;
+}
+
+/* Left copyright text */
+.copyright-text {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Italic brand name */
+.brand-italic {
+  font-family: "Arimo Hebrew Subset Italic", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Footer right side links - Figma spec */
+.footer-link {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* ✅ Scroll-to-top button using Arrow-up.png */
+.scroll-top-btn {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.scroll-top-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+/* ✅ The Arrow-up.png icon styling */
+.scroll-top-icon {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+  filter: brightness(0.9);
+  transition: filter 0.3s ease;
+}
+
+.scroll-top-btn:hover .scroll-top-icon {
+  filter: brightness(1.2);
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .copyright-section .container {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}

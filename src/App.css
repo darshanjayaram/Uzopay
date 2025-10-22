@@ -1,0 +1,413 @@
+.hero {
+  width: 100%;
+  height: 698px;
+  color: #ffffff;
+  overflow: hidden;
+  position: relative;
+  font-family: "Inter", sans-serif;
+}
+
+.hero-left {
+  top: 242px;
+  left: 0;
+  width: 605px;
+  height: 378px;
+  gap: 40px;
+  z-index: 20;
+  padding-left: 8px;
+  padding-right: 8px;
+  position: absolute;
+}
+
+.hero-left .badge-custom {
+  margin-bottom: 6px;
+}
+
+.hero-heading {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 1.2;
+  /* ~120% */
+  letter-spacing: -0.03em;
+  width: 719px;
+  height: 132px;
+  margin: 0;
+  /* gradient text */
+  background: linear-gradient(90deg, #ffffff 0%, #bda0ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-desc {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #b5b0b7;
+  width: 503px;
+  height: 81px;
+  margin: 0;
+}
+
+.hero-buttons {
+  margin-top: 6px;
+}
+
+.robot-wrapper {
+  top: 130px;
+  width: 100%;
+  max-width: 838px;
+  height: 574px;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.robot-img {
+  width: 838px;
+  height: 574px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 60px rgba(168, 85, 247, 0.45));
+  transform: scaleX(-1);
+  display: block;
+}
+
+.robot-shade {
+  overflow: visible;
+  bottom: -48px;
+  position: absolute;
+  max-width: 100%;
+}
+
+.robot-shade-dark {
+  overflow: visible;
+  bottom: 40px;
+  position: absolute;
+  max-width: 100%;
+}
+
+.floating-tag {
+  position: absolute;
+  pointer-events: none;
+  z-index: 30;
+}
+
+.tag-pos-1 {
+  top: 310px;
+  left: 18%;
+  transform: translate(-50%, -50%);
+}
+
+.tag-pos-2 {
+  top: 25%;
+  right: 31%;
+  transform: translate(50%, -50%);
+}
+
+.tag-pos-3 {
+  top: 48%;
+  right: 28%;
+  transform: translate(50%, -50%);
+}
+
+/* Glow behind robot */
+.hero-glow {
+  right: 0;
+  top: 220px;
+  width: 520px;
+  height: 360px;
+  transform: translateX(-6rem);
+  /* -translate-x-24 equivalent */
+  background: radial-gradient(circle at 50% 0%, rgba(44, 4, 74, 0.6), rgba(44, 4, 74, 0) 60%);
+  filter: blur(60px);
+  pointer-events: none;
+  z-index: 5;
+}
+
+.nav-bg {
+  position: absolute;
+  bottom: 450px;
+
+}
+
+
+/* Large tablets / small desktops (<= 1200px) slightly scale things */
+@media (max-width: 1200px) {
+  .hero {
+    height: 640px;
+  }
+
+  .hero-heading {
+    font-size: 48px;
+    width: 640px;
+  }
+
+  .hero-left {
+    top: 210px;
+    left: 12px;
+    width: 560px;
+  }
+
+  .robot-img {
+    width: 720px;
+    height: auto;
+  }
+
+  .robot-wrapper {
+    max-width: 720px;
+    height: auto;
+    top: 110px;
+  }
+
+  .robot-shade {
+    bottom: -105px;
+  }
+
+  .robot-shade-dark {
+    bottom: -20px;
+  }
+
+  .nav-bg {
+    max-width: 100%;
+    bottom: 430px;
+  }
+}
+
+/* Tablet layout: we reduce absolute placement magnitude and shift tags inward */
+@media (max-width: 992px) {
+  .hero {
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 100px;
+  }
+
+  .hero-container-wrapper {
+    top: 80px;
+  }
+
+  .hero-left {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: auto;
+    height: auto;
+    padding: 0 12px;
+    margin-bottom: 18px;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .floating-tag {
+    font-size: 14px;
+  }
+
+  .hero-heading {
+    font-size: 40px;
+    width: 100%;
+    line-height: 1.08;
+  }
+
+  .hero-desc {
+    width: 100%;
+    font-size: 16px;
+    max-width: 680px;
+  }
+
+  .robot-wrapper {
+    max-width: 560px;
+    height: auto;
+    top: 0;
+    margin: 0 auto;
+  }
+
+  .robot-img {
+    width: 560px;
+    height: auto;
+    transform: scaleX(-1);
+    filter: drop-shadow(0 0 50px rgba(168, 85, 247, 0.35));
+  }
+
+  /* Adjust tag positions for tablet */
+  .tag-pos-1 {
+    top: 260px;
+    left: 18%;
+    transform: translate(-50%, -50%);
+  }
+
+  .tag-pos-2 {
+    top: 18%;
+    right: 26%;
+    transform: translate(50%, -50%);
+  }
+
+  .tag-pos-3 {
+    top: 42%;
+    right: 22%;
+    transform: translate(50%, -50%);
+  }
+
+  .hero-glow {
+    width: 420px;
+    height: 300px;
+    top: 200px;
+    transform: translateX(-5rem);
+    filter: blur(56px);
+  }
+
+  .robot-shade {
+    bottom: -105px;
+  }
+
+  .robot-shade-dark {
+    bottom: -20px;
+  }
+
+  .nav-bg {
+    max-width: 100%;
+    bottom: 650px;
+  }
+}
+
+/* Mobile: stack, center text and scale images down */
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding-top: 56px;
+    padding-bottom: 100px;
+  }
+
+  .hero-container-wrapper {
+    top: 80px;
+  }
+
+  .hero-left {
+    position: relative;
+    padding: 0 18px;
+    margin-bottom: 16px;
+    align-items: flex-start;
+  }
+
+  .hero-heading {
+    font-size: 28px;
+    line-height: 1.1;
+    font-weight: 600;
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+  }
+
+  .hero-left .badge-custom {
+    margin-bottom: 10px;
+  }
+
+  .hero-desc {
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    color: rgba(181, 176, 183, 0.95);
+  }
+
+  .robot-wrapper {
+    max-width: 360px;
+    margin: 8px auto 0;
+    right: 10px;
+  }
+
+  .robot-img {
+    width: 320px;
+    height: auto;
+    filter: drop-shadow(0 0 30px rgba(168, 85, 247, 0.28));
+  }
+
+  /* reposition tags to avoid overlap on very small screens */
+  .tag-pos-1 {
+    top: 80px;
+    left: 5%;
+    transform: translate(-50%, -50%);
+  }
+
+  .tag-pos-2 {
+    top: 10%;
+    right: 33%;
+    transform: translate(50%, -50%);
+  }
+
+  .tag-pos-3 {
+    top: 40%;
+    right: 30%;
+    transform: translate(50%, -50%);
+  }
+
+  .hero-glow {
+    width: 320px;
+    height: 220px;
+    top: 160px;
+    transform: translateX(-3.6rem);
+    filter: blur(40px);
+  }
+
+  .robot-shade {
+    bottom: -65px;
+  }
+
+  .robot-shade-dark {
+    bottom: -15px;
+  }
+
+  .nav-bg {
+    max-width: 100%;
+    bottom: 415px;
+  }
+}
+
+/* Very small phones - tighten spacing */
+@media (max-width: 420px) {
+  .hero-heading {
+    font-size: 24px;
+  }
+
+  .hero-desc {
+    font-size: 14px;
+  }
+
+  .robot-img {
+    width: 300px;
+  }
+
+  .hero {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .robot-shade {
+    bottom: -65px;
+  }
+
+  .robot-shade-dark {
+    bottom: -15px;
+  }
+
+  .nav-bg {
+    max-width: 100%;
+    left: -9px;
+    bottom: 500px;
+  }
+}
+
+.floating-tag .whitespace-nowrap {
+  white-space: nowrap;
+}
+
+@media (max-width: 420px) {
+  .hero-buttons {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}

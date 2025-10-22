@@ -1,0 +1,19 @@
+.floating-tag {
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(144, 128, 146, 0.15);
+  backdrop-filter: blur(24px);
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+@media (max-width: 767px) {
+.floating-tag {
+    font-size: 12px;
+  }
+  .floating-tag .floating-wrapper{
+    padding: 5px!important;
+  }
+}
