@@ -13,40 +13,48 @@ export default function Expertise() {
             title: "UPI Autopay",
             body: "Automate your payments with UPI Autopay, ensuring timely transactions without manual effort.",
             image: expertise1,
+            image: expertise1,
         },
         {
             title: "API Banking",
             body: "Integrate financial services seamlessly into your applications with our robust API banking solutions.",
+            image: expertise2,
             image: expertise2,
         },
         {
             title: "Payouts",
             body: "Deliver payouts swiftly and securely, ensuring timely disbursement to employees, partners, or clients.",
             image: expertise3,
+            image: expertise3,
         },
         {
             title: "Bulk Payments",
             body: "Process multiple payments at once, saving time and reducing errors with bulk payment options.",
             image: expertise4,
+            image: expertise4,
         },
         {
             title: "Bulk Payments",
             body: "Process multiple payments at once, saving time and reducing errors with bulk payment options.",
+            image: expertise4,
             image: expertise4,
         },
         {
             title: "Payouts",
             body: "Deliver payouts swiftly and securely, ensuring timely disbursement to employees, partners, or clients.",
             image: expertise3,
+            image: expertise3,
         },
         {
             title: "API Banking",
             body: "Integrate financial services seamlessly into your applications with our robust API banking solutions.",
             image: expertise2,
+            image: expertise2,
         },
         {
             title: "Bulk Payments",
             body: "Process multiple payments at once, saving time and reducing errors with bulk payment options.",
+            image: expertise1,
             image: expertise1,
         },
     ];

@@ -1,16 +1,69 @@
-# React + Vite
+# 🌐 UzOPay — React + Vite Implementation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a **frontend implementation** for **UzOPay**, designed based on provided Figma specifications.  
+It showcases a responsive and modern payment gateway interface built with **React (Vite)**, **Bootstrap**, and **GSAP animations**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## React Compiler
+🔗 **View the working version:**  
+👉 [https://uzopaytask.netlify.app](https://uzopaytask.netlify.app)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📂 GitHub Repository
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+💻 **Source Code:**  
+👉 [https://github.com/darshanjayaram/Uzopay](https://github.com/darshanjayaram/Uzopay)
+
+---
+
+## ⚙️ Tech Stack
+
+| Technology | Purpose |
+|-------------|----------|
+| **React + Vite** | Frontend framework |
+| **Bootstrap 5** | Layout & responsiveness |
+| **GSAP** | Animation handling |
+| **React Hooks** | Component logic (useEffect, useRef) |
+| **CSS3** | Custom component styling |
+| **Netlify** | Deployment platform |
+
+---
+
+## 🛠️ Setup & Run Instructions
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/darshanjayaram/Uzopay.git
+```
+### 2️⃣ Navigate into the Project Folder
+```bash
+cd Uzopay
+```
+### 3️⃣ Install Dependencies
+```bash
+npm install
+```
+```bash
+npm install bootstrap 
+```
+```bash
+npm install prop-types
+npm install @types/prop-types
+```
+```bash
+npm install gsap @gsap/react
+```
+### 4️⃣ Run the Development Server
+```bash
+npm run dev
+```
+The project will start on 👉 [http://localhost:5173](http://localhost:5173)
+
+### 5️⃣ Build for Production
+```bash
+npm run build
+```
+
