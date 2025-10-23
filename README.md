@@ -46,16 +46,15 @@ cd Uzopay
 ```bash
 npm install
 ```
-```
+```bash
 npm install bootstrap 
 ```
-```
+```bash
 npm install prop-types
 npm install @types/prop-types
 ```
-```
+```bash
 npm install gsap @gsap/react
-```
 ```
 ### 4️⃣ Run the Development Server
 ```bash
