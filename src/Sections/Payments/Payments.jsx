@@ -9,6 +9,9 @@ import paymentsIcon from "../../assets/tab-icon-1.png";
 import payoutIcon from "../../assets/tab-icon-2.png";
 import payrollIcon from "../../assets/tab-icon-3.png";
 import aiIcon from "../../assets/tab-icon-4.png";
+import bulletsIcon1 from "../../assets/payment-feature-1.png"
+import bulletsIcon2 from "../../assets/payment-feature-2.png"
+import bulletsIcon3 from "../../assets/payment-feature-3.png"
 
 export default function Payments() {
     const tabs = [
@@ -20,9 +23,9 @@ export default function Payments() {
             body:
                 "Our payment gateway simplifies transactions for e-commerce businesses, delivering fast and secure processing. With smooth integration, we enhance your checkout and boost customer satisfaction.",
             bullets: [
-                { icon: "/src/assets/payment-feature-1.png", text: "Optimize Your Checkout" },
-                { icon: "/src/assets/payment-feature-2.png", text: "Fast and Secure" },
-                { icon: "/src/assets/payment-feature-3.png", text: "Smooth Integration" },
+                { icon: bulletsIcon1, text: "Optimize Your Checkout" },
+                { icon: bulletsIcon2, text: "Fast and Secure" },
+                { icon: bulletsIcon3, text: "Smooth Integration" },
             ],
             img: panelImg,
         },
@@ -34,9 +37,9 @@ export default function Payments() {
             body:
                 "Automate and schedule payouts to vendors and contractors with robust controls and auditability.",
             bullets: [
-                { icon: "/src/assets/payment-feature-1.png", text: "Optimize Your Checkout" },
-                { icon: "/src/assets/payment-feature-2.png", text: "Fast and Secure" },
-                { icon: "/src/assets/payment-feature-3.png", text: "Smooth Integration" },
+                { icon: bulletsIcon1, text: "Optimize Your Checkout" },
+                { icon: bulletsIcon2, text: "Fast and Secure" },
+                { icon: bulletsIcon3, text: "Smooth Integration" },
             ],
             img: panelImg2,
         },
@@ -48,9 +51,9 @@ export default function Payments() {
             body:
                 "Accurate payroll calculations, local tax support, and multi-country payouts.",
             bullets: [
-                { icon: "/src/assets/payment-feature-1.png", text: "Optimize Your Checkout" },
-                { icon: "/src/assets/payment-feature-2.png", text: "Fast and Secure" },
-                { icon: "/src/assets/payment-feature-3.png", text: "Smooth Integration" },
+                { icon: bulletsIcon1, text: "Optimize Your Checkout" },
+                { icon: bulletsIcon2, text: "Fast and Secure" },
+                { icon: bulletsIcon3, text: "Smooth Integration" },
             ],
             img: panelImg3,
         },
@@ -62,9 +65,9 @@ export default function Payments() {
             body:
                 "Smart risk scoring and transaction insights to reduce fraud and increase conversion.",
             bullets: [
-                { icon: "/src/assets/payment-feature-1.png", text: "Optimize Your Checkout" },
-                { icon: "/src/assets/payment-feature-2.png", text: "Fast and Secure" },
-                { icon: "/src/assets/payment-feature-3.png", text: "Smooth Integration" },
+                { icon: bulletsIcon1, text: "Optimize Your Checkout" },
+                { icon: bulletsIcon2, text: "Fast and Secure" },
+                { icon: bulletsIcon3, text: "Smooth Integration" },
             ],
             img: panelImg,
         },
