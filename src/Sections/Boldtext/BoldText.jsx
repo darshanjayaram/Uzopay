@@ -1,5 +1,5 @@
 import React from "react";
-import "../Css/BoldText.css";
+import "../../Css/BoldText.css";
 
 export default function BoldText() {
     return (

@@ -1,22 +1,22 @@
 import { useState } from 'react'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.css';
-import Hero from './Components/Hero'
+import Hero from './Sections/Hero/Hero'
 import Navbar from './Components/Navbar';
-import Frame1 from './Components/Frame1';
-import BoldText from './Components/BoldText';
-import Steps from './Components/Steps';
+import Frame1 from './Sections/FrameOne/Frame1';
+import BoldText from './Sections/Boldtext/BoldText';
+import Steps from './Sections/Steps/Steps';
 import bg0 from "./assets/Video-bg.png";
 import bg1 from "./assets/Video-bg1.png";
 import bg2 from "./assets/Video-bg2.png";
-import LayeredCarousel from "./Components/LayeredCarousel";
-import Frame2 from './Components/Frame2';
-import Reasons from './Components/Reasons';
-import Expertise from './Components/Expertise';
-import Payments from './Components/Payments';
-import ClientFeedback from './Components/ClientFeedback';
-import Footer from './Components/Footer';
-import Copyright from './Components/Copyright';
+import LayeredCarousel from "./Sections/Carousel/LayeredCarousel";
+import Frame2 from './Sections/FrameTwo/Frame2';
+import Reasons from './Sections/Reasons/Reasons';
+import Expertise from './Sections/Expertise/Expertise';
+import Payments from './Sections/Payments/Payments';
+import ClientFeedback from './Sections/Feedback/ClientFeedback';
+import Footer from './Sections/Footer/Footer';
+import Copyright from './Sections/Copyright/Copyright';
 
 function App() {
   const [count, setCount] = useState(0)

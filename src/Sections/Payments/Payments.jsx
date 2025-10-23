@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import SectionTitle from "./SectionTitle";
-import Button from "./Button";
-import "../Css/Payments.css";
-import panelImg from "../assets/payments-tab-img.png";
-import panelImg2 from "../assets/payments-tab-img.png";
-import panelImg3 from "../assets/payments-tab-img.png";
-import paymentsIcon from "../assets/tab-icon-1.png";
-import payoutIcon from "../assets/tab-icon-2.png";
-import payrollIcon from "../assets/tab-icon-3.png";
-import aiIcon from "../assets/tab-icon-4.png";
+import SectionTitle from "../../Components/SectionTitle";
+import Button from "../../Components/Button";
+import "../../Css/Payments.css";
+import panelImg from "../../assets/payments-tab-img.png";
+import panelImg2 from "../../assets/payments-tab-img.png";
+import panelImg3 from "../../assets/payments-tab-img.png";
+import paymentsIcon from "../../assets/tab-icon-1.png";
+import payoutIcon from "../../assets/tab-icon-2.png";
+import payrollIcon from "../../assets/tab-icon-3.png";
+import aiIcon from "../../assets/tab-icon-4.png";
 
 export default function Payments() {
     const tabs = [

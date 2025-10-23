@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
-import Badge from "./Badge";
-import frame1Img from "../assets/Frame1.png";
-import growthImg from "../assets/growth.png";
-import bgBlur from "../assets/BG-blur.png";  
-import "../Css/Frame1.css"
+import Badge from "../../Components/Badge.jsx";
+import frame1Img from "../../assets/Frame1.png";
+import growthImg from "../../assets/growth.png";
+import bgBlur from "../../assets/BG-blur.png";  
+import "../../Css/Frame1.css"
 
 const Frame1 = () => {
   const ref = useRef(null);

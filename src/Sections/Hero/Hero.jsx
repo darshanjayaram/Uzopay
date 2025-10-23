@@ -1,12 +1,12 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
-import Button from "./Button";
-import FloatingTag from "./FloatingTag";
-import robotImg from "../assets/robot.png";
-import robotShade from "../assets/robo-shade.png"
-import robotShadeDark from "../assets/robo-shade-dark.png"
-import navBg from "../assets/Nav-bg.png"
-import Badge from "./Badge";
+import Button from "../../Components/Button.jsx";
+import FloatingTag from "../../Components/FloatingTag.jsx";
+import robotImg from "../../assets/robot.png";
+import robotShade from "../../assets/robo-shade.png"
+import robotShadeDark from "../../assets/robo-shade-dark.png"
+import navBg from "../../assets/Nav-bg.png"
+import Badge from "../../Components/Badge.jsx";
 
 const Hero = () => {
     const heroRef = useRef(null);
@@ -36,12 +36,7 @@ const Hero = () => {
     return (
         <section ref={heroRef} className="hero position-relative text-white overflow-hidden">
             <div className="container-lg h-100 position-relative hero-container-wrapper">
-                <img
-                    src={navBg}
-                    alt="AI Robot"
-                    className="nav-bg"
-                    style={{ height: "auto" }}
-                />
+                <img src={navBg} alt="AI Robot" className="nav-bg" style={{ height: "auto" }} />
                 <div className="row gx-0">
                     {/* LEFT: Text Section (absolute on desktop, stacked on mobile) */}
                     <div className="col-sm-12 col-md-12 col-lg-6">

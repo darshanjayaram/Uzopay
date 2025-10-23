@@ -1,6 +1,6 @@
 import React from "react";
-import "../Css/Reasons.css";
-import SectionTitle from "./SectionTitle.jsx";
+import "../../Css/Reasons.css";
+import SectionTitle from "../../Components/SectionTitle.jsx";
 import ReasonCardTL from "./ReasonCardTL.jsx";
 import ReasonCardTR from "./ReasonCardTR.jsx";
 import ReasonCardBL from "./ReasonCardBL.jsx";

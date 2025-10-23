@@ -1,7 +1,7 @@
 import React from "react";
-import "../Css/ReasonCardTL.css";
-import mediaImg from "../assets/card-tr-media.png";
-import Button from "./Button";
+import "../../Css/ReasonCardTL.css";
+import mediaImg from "../../assets/card-tr-media.png";
+import Button from "../../Components/Button";
 
 export default function ReasonCardTR({
     title = "Faster Processing Time",

@@ -1,6 +1,6 @@
 import React from "react";
-import "../Css/Copyright.css";
-import arrowUpIcon from "../assets/Arrow-up.png";
+import "../../Css/Copyright.css";
+import arrowUpIcon from "../../assets/Arrow-up.png";
 
 export default function Copyright() {
   const scrollToTop = () => {

@@ -1,9 +1,9 @@
 import React from "react";
-import "../Css/ReasonCardTL.css";
-import paymentImg from "../assets/reason-card-bl.png"; 
-import Button from "./Button"; 
+import "../../Css/ReasonCardTL.css";
+import paymentImg from "../../assets/payment.png"; 
+import Button from "../../Components/Button"; 
 
-export default function ReasonCardBL() {
+export default function ReasonCardTL() {
   return (
     <div className="reason-card-tl glass-card d-flex flex-column">
       <div className="reason-card-video">
@@ -19,10 +19,10 @@ export default function ReasonCardBL() {
       <div className="reason-card-content py-4">
         <div className="reason-card-info">
           <h5 className="reason-card-title mb-2">
-            Flexible Solutions
+            Optimize customer <span className="muted-text">journeys</span>
           </h5>
           <p className="reason-card-body mb-3">
-            Customizable options to meet the unique needs of your business.
+            Streamlined transactions enhancing efficiency and customer satisfaction.
           </p>
         </div>
 

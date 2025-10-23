@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import "../Css/Steps.css";
-import "../Css/Slider.css"
-import Button from "./Button";
-import VerticalSlider from "./VerticalSlider";
-import stepsImg from "../assets/steps.png";
-import Badge from "./Badge";
-import bgBlur from "../assets/bg-blur-steps.png";
+import "../../Css/Steps.css";
+import "../../Css/Slider.css"
+import Button from "../../Components/Button";
+import VerticalSlider from "../../Components/VerticalSlider";
+import stepsImg from "../../assets/steps.png";
+import Badge from "../../Components/Badge";
+import bgBlur from "../../assets/bg-blur-steps.png";
 
 export default function Steps() {
     const [active, setActive] = useState(0);

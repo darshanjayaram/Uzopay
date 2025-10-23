@@ -1,9 +1,8 @@
 import React from "react";
-import Button from "./Button";
-import "../Css/Frame2.css";
-
-import bgLeft from "../assets/frame2-bg-left.png";
-import bgRight from "../assets/frame2-bg-left.png";
+import Button from "../../Components/Button.jsx";
+import "../../Css/Frame2.css";
+import bgLeft from "../../assets/frame2-bg-left.png";
+import bgRight from "../../assets/frame2-bg-left.png";
 
 export default function Frame2({
   title = "Let’s build the\nfuture of finance together",

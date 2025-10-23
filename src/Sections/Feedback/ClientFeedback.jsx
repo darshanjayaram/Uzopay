@@ -1,11 +1,11 @@
 import React, { useEffect, useMemo, useState } from "react";
-import SectionTitle from "./SectionTitle";
-import "../Css/ClientFeedback.css";
+import SectionTitle from "../../Components/SectionTitle";
+import "../../Css/ClientFeedback.css";
 
 // Images for Feedback.
-import avatar1 from "../assets/feedback-1.png";
-import avatar2 from "../assets/feedback-1.png";
-import avatar3 from "../assets/feedback-1.png";
+import avatar1 from "../../assets/feedback-1.png";
+import avatar2 from "../../assets/feedback-1.png";
+import avatar3 from "../../assets/feedback-1.png";
 
 export default function ClientFeedback({ className = "" }) {
     // Data for Cards
@@ -56,7 +56,7 @@ export default function ClientFeedback({ className = "" }) {
             avatar: avatar2,
         },
         {
-            id: "t5",
+            id: "t6",
             quote:
                 "Reliable and secure — perfect fit for our payment flows and international requirements.",
             name: "Andre Silva",

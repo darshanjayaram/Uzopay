@@ -1,8 +1,8 @@
 import React from "react";
-import "../Css/Footer.css";
-import facebookIcon from "../assets/facebook.png";
-import metaIcon from "../assets/meta.png";
-import instagramIcon from "../assets/instagram.png";
+import "../../Css/Footer.css";
+import facebookIcon from "../../assets/facebook.png";
+import metaIcon from "../../assets/meta.png";
+import instagramIcon from "../../assets/instagram.png";
 
 export default function Footer() {
     const payments = [

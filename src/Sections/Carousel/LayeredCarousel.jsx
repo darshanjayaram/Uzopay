@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
-import "../Css/LayeredCarousel.css";
-import overlayImg from "../assets/Video-overlay.png";
+import "../../Css/LayeredCarousel.css";
+import overlayImg from "../../assets/Video-overlay.png";
 
 export default function LayeredCarousel({
   images = [],
