@@ -97,7 +97,7 @@
 
 .tag-pos-1 {
   top: 310px;
-  left: 18%;
+  left: 13%;
   transform: translate(-50%, -50%);
 }
 
@@ -173,6 +173,11 @@
   .nav-bg {
     max-width: 100%;
     bottom: 430px;
+  }
+  .tag-pos-1 {
+    top: 165px;
+    left: 0%;
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -328,8 +333,8 @@
 
   /* reposition tags to avoid overlap on very small screens */
   .tag-pos-1 {
-    top: 80px;
-    left: 5%;
+    top: 100px;
+    left: -14%;
     transform: translate(-50%, -50%);
   }
 
@@ -398,6 +403,11 @@
     max-width: 100%;
     left: -9px;
     bottom: 500px;
+  }
+  .tag-pos-1 {
+    top: 100px;
+    left: 5%;
+    transform: translate(-50%, -50%);
   }
 }
 
