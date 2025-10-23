@@ -45,6 +45,7 @@ cd Uzopay
 ### 3️⃣ Install Dependencies
 ```bash
 npm install
+npm install bootstrap 
 ```
 ### 4️⃣ Run the Development Server
 ```bash
